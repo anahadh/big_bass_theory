@@ -82,7 +82,7 @@ const Landing = () => {
                 </div>
 
                 <div className="relative flex items-start w-1/2 pl-20">
-                    <img className="relative aspect-auto w-[80%] border-4  border-primary rounded-2xl object-cover" alt="A photo of the founders of the company, Kota and Cade" src="public/BBTKota&Cade.png" />
+                    <img className="relative aspect-auto w-[80%] border-4  border-primary rounded-2xl object-cover" alt="A photo of the founders of the company, Kota and Cade" src="/BBTKota&Cade.png" />
                 </div>
             </div>
 

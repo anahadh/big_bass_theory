@@ -32,7 +32,7 @@ const App = () => {
           </div>
 
           <Link to="/">
-            <img className="absolute z-50 top-2 left-1/2 -translate-x-1/2 w-[200px] h-auto transition-all duration-200 hover:scale-110 active:scale-90" src="../public/BBTLogo.png" />
+            <img className="absolute z-50 top-2 left-1/2 -translate-x-1/2 w-[200px] h-auto transition-all duration-200 hover:scale-110 active:scale-90" src="/BBTLogo.png" />
           </Link>
 
           <div className="absolute -top-28 left-1/2 -translate-x-1/2 h-[450px] outline-gray-200 outline aspect-square rounded-full bg-white z-40" />
