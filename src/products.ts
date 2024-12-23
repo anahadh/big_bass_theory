@@ -6,7 +6,7 @@ const fishingProducts = [
         price: 4.99,
         modalInfo: "No Dink Pink worm baits are brightly colored fishing lures shaped like worms, featuring a vivid hot pink hue that stands out in the water. Their eye-catching design and realistic worm-like shape make them highly effective at attracting a variety of fish species.",
         link: "https://buy.stripe.com/test_fZe5m20KC7uI16E9AB",
-        pic: "../public/NoDinkPink.png"
+        pic: "../public/nodinkpink.png"
     },
     {
         id: "price_1QXzcsB4LoFmb9NB2tKxWjBS",
