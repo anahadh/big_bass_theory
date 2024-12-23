@@ -1,7 +1,7 @@
 import ProductDisplay from "../components/ProductDisplay"
 import ProductModal from "../components/ProductModal"
 import { fishingProducts, apparelProducts } from "../products"
-import { useState } from "react"
+import { ChangeEvent, useState } from "react"
 
 const Products = () => {
     const [isModal, setIsModal] = useState(false);
@@ -23,6 +23,14 @@ const Products = () => {
         setSelectedProduct(null);
     }
 
+    const handleFishingSelection = (e: ChangeEvent<HTMLInputElement>) => {
+        setFishingSelected(e.target.checked)
+    }
+
+    const handleApparelSelection = (e: ChangeEvent<HTMLInputElement>) => {
+        setApparelSelected(e.target.checked)
+    }
+
     return (
         <div className='flex flex-col items-center w-screen h-screen bg-gray-100'>
         {/* Banner Section */}
@@ -37,11 +45,11 @@ const Products = () => {
                     <p className="relative flex font-title text-5xl mb-10 italic font-bold before:absolute before:bottom-[-13px] before:left-0 before:h-[5px] before:w-full before:bg-black">Select Gear Type</p>
                     <div className="space-y-5 font-info">
                         <label className="flex items-center justify-center space-x-5">
-                            <input type="checkbox" className="border-4 border-black rounded-none size-8 active:bg-black" />
+                            <input checked={fishingSelected} onChange={handleFishingSelection} type="checkbox" className="border-4 border-black rounded-none size-8 active:bg-black" />
                             <span className="text-4xl font-bold">Fishing Gear</span>
                         </label>
                         <label className="flex items-center justify-center space-x-5">
-                            <input type="checkbox" className="border-4 border-black rounded-none size-8 active:bg-black" />
+                            <input checked={apparelSelected} onChange={handleApparelSelection} type="checkbox" className="border-4 border-black rounded-none size-8 active:bg-black" />
                             <span className="text-4xl font-bold">Apparel</span>
                         </label>
                         <label className="flex items-center justify-center space-x-5">
@@ -52,20 +60,37 @@ const Products = () => {
                 </div>
 
                 <div className="grid w-3/4 h-auto grid-cols-3 p-20 gap-x-3 gap-y-20 bg-background">
-                    {fishingProducts.map((product) => (
-                        <ProductDisplay
-                        key={product.id}
-                        {...product}
-                        onViewOpen={() => handleViewOpen(product)}
-                        />
-                    ))}
-                    {apparelProducts.map((product) => (
-                        <ProductDisplay
-                        key={product.id}
-                        {...product}
-                        onViewOpen={() => handleViewOpen(product)}
-                        />
-                    ))}
+                    {((!apparelSelected && !fishingSelected)) || (apparelSelected && fishingSelected) ? 
+                        <>
+                            {fishingProducts.map((product) => (
+                                <ProductDisplay
+                                key={product.id}
+                                {...product}
+                                onViewOpen={() => handleViewOpen(product)}
+                                />
+                            ))}
+                            {apparelProducts.map((product) => (
+                                <ProductDisplay
+                                key={product.id}
+                                {...product}
+                                onViewOpen={() => handleViewOpen(product)}
+                                />
+                            ))}
+                        </> : apparelSelected ? 
+                        apparelProducts.map((product) => (
+                            <ProductDisplay
+                            key={product.id}
+                            {...product}
+                            onViewOpen={() => handleViewOpen(product)}
+                            />
+                        )) : 
+                        fishingProducts.map((product) => (
+                            <ProductDisplay
+                            key={product.id}
+                            {...product}
+                            onViewOpen={() => handleViewOpen(product)}
+                            />
+                        ))}
                 </div>
             </main>
 
