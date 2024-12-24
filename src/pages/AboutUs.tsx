@@ -19,35 +19,38 @@ const AboutUs = () => {
         {/* Section: The People Behind It */}
         <section className="flex flex-col items-center justify-center w-full h-auto p-10 text-center bg-white">
           <h2 className="mb-16 font-black mt-28 text-7xl font-title">The People Behind It</h2>
-          <div className="flex flex-row items-start justify-center h-auto py-10 space-x-10 w-[55%] font-info">
+          <div className="flex flex-row items-start justify-center h-auto py-10 space-x-10 w-[67%] font-info">
             {/* Left Photo */}
             <div className="flex flex-col items-center">
               <img
-                src="https://via.placeholder.com/150"
+                src="/bbtkota.png"
                 alt="Kota Ishayama"
-                className="object-cover rounded-lg min-h-[540px] max-w-[360px]"
+                className="object-cover rounded-lg min-h-[540px] max-w-[360px] shadow-xl"
               />
             </div>
 
             {/* Middle Text Section */}
-            <div className="flex flex-col justify-between space-y-16 h-full w-[50%]">
+            <div className="flex flex-col justify-between h-full w-[50%]">
               {/* Kota's Section */}
               <div className="mb-20">
-                <h3 className="mb-4 text-4xl font-bold text-left">Kota Ishiyama</h3>
+                <h3 className="relative mb-4 text-4xl font-bold text-left before:absolute before:bottom-[-10px] before:left-0 before:bg-accent before:w-full before:h-0.5">Kota Ishiyama</h3>
                 <p className="text-2xl text-justify text-gray-600">
-                  Together, our team combines passion and technical skill to deliver
-                  products that truly resonate with fishing enthusiasts worldwide. From
-                  design to production, we work tirelessly to exceed your expectations.
+                  Since the Little Leagues, Kota has had dreams of innovating in 
+                  the fishing industry. With Big Bass Theory, he hopes to make the 
+                  activity of fishing more accessible to more people while still maintaining 
+                  its challenge and charm.
                 </p>
               </div>
 
               {/* Cade's Section */}
               <div className="flex flex-col">
-                <h3 className="mb-4 text-4xl font-bold text-right">Cade Niemann</h3>
+                <h3 className="relative mb-4 text-4xl font-bold text-right before:absolute before:bottom-[-10px] before:left-0 before:bg-accent before:w-full before:h-0.5">Cade Neimman</h3>
                 <p className="text-2xl text-justify text-gray-600">
-                  Together, our team combines passion and technical skill to deliver
-                  products that truly resonate with fishing enthusiasts worldwide. From
-                  design to production, we work tirelessly to exceed your expectations.
+                  After observing the unnecessary difficulties in fishing, like
+                  low quality gear and varying materials which made the sport difficult to enter,
+                  Cade took matters into his own hands. He joined Kota and used his creative
+                  skills to help create the high-quality products the Big Bass Theory 
+                  produces today.
                 </p>
               </div>
             </div>
@@ -55,9 +58,9 @@ const AboutUs = () => {
             {/* Right Photo */}
             <div className="flex flex-col items-center">
               <img
-                src="https://via.placeholder.com/150"
+                src="/bbtcade.png"
                 alt="Cade Niemann"
-                className="object-cover rounded-lg min-h-[540px] max-w-[360px]"
+                className="object-cover rounded-lg min-h-[540px] max-w-[360px] shadow-xl"
               />
             </div>
           </div>

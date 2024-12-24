@@ -4,26 +4,32 @@ const testimonials = [
     {
         name: "Brian Smith",
         testimonial: "The baits I purchased here are impressively durable and incredibly lifelike in the water. Since using them, I’ve consistently reeled in more fish, and they’ve quickly become my go-to choice.",
+        pic: "https://live.staticflickr.com/7109/7466716928_d37f3f5fc9.jpg"
     },
     {
         name: "María Hernández",
         testimonial: "I decided to try their backpacks and was blown away by how comfortable and spacious they are. I can carry all my tackle, extra baits, and a thermos without feeling weighed down during my long fishing excursions.",
+        pic: "https://media.istockphoto.com/id/1369509530/photo/portrait-of-natural-beauty-woman-at-beach.jpg?s=612x612&w=0&k=20&c=7xvyPUdDvNZMYuxyA9wM3H0gHNaBCyjA87G0-jhtbEA="
     },
     {
         name: "Amit Patel",
         testimonial: "Their baits have a natural, alluring movement that seems irresistible to fish of all sizes. I’ve noticed a significant uptick in my catch rate, making every trip out feel more productive and rewarding.",
+        pic: "https://media.istockphoto.com/id/628330740/photo/portrait-of-a-beautifull-smiling-man.jpg?s=612x612&w=0&k=20&c=t10Nhvv-kzaSEdYpL0-dUvN5_Z9YV58vvDGmwcjZrIk="
     },
     {
         name: "Hana Tanaka",
         testimonial: "I recently tried one of their specialized fishing backpacks and was immediately impressed by the thoughtful design and numerous compartments. It’s made organizing my gear a breeze and saved me precious time when switching lures or baits.",
+        pic: "https://media.istockphoto.com/id/1182564506/photo/portrait-of-a-young-confident-man.jpg?s=612x612&w=0&k=20&c=zTzGLC7cqprsIV7xiP5Y_HU-zbomPxlYsJx9DrE8wmE="
     },
     {
         name: "Jean Dupont",
         testimonial: "Their shirts are exceptionally comfortable and breathable, perfect for long days in the sun. Not only do they look great, but they also help keep me cool, allowing me to focus on landing the next big catch.",
+        pic: "https://media.istockphoto.com/id/589122048/photo/paris-street-fashion.jpg?s=612x612&w=0&k=20&c=g5n_MvFYlZktT49Wa4VlaQJWfCy2row6cx5OXBb3zw0="
     },
     {
         name: "Faith Johnson",
         testimonial: "The baits I bought here strike the perfect balance between durability and realism, holding up even after multiple strikes. I’m seeing better results on every trip, and it’s been a genuine confidence boost in my fishing abilities.",
+        pic: "https://media.istockphoto.com/id/97830053/photo/mature-woman-at-coast.jpg?s=612x612&w=0&k=20&c=MJTA3r1xoR7KAQRPPVLv4pFtoSrvdXjiY-fZpaJyXWw="
     }
 ]
 
@@ -47,23 +53,26 @@ const Landing = () => {
             <div className="relative flex justify-center items-center h-[85vh] w-screen bg-background">
                 <div className="relative flex flex-row w-3/5 gap-8 mb-60 mt-60 h-5/6">
                     <div className="relative flex flex-col items-center justify-center w-full h-full p-8 space-y-8">
-                        <img className="w-full h-3/4 rounded-xl" src="" />
+                        <img className="object-cover w-full h-3/4 rounded-xl" src="/nodinkpink.png" />
                         <p className="flex justify-center text-4xl font-bold font-info">No Dink Pink Baits</p>
                         <Link to="/shop"  className="relative flex font-info items-center justify-center h-[80px] w-5/6 bg-accent text-[40px] font-bold transition-all duration-300 ease-in-out hover:bg-yellow-300/85 before:transition-transform before:duration-100 before:ease-out before:absolute before:inset-0 before:bg-transparent before:outline before:outline-8 before:outline-accent/50 hover:before:scale-x-110 hover:before:scale-y-125">
                             SHOP NOW
                         </Link>
                     </div>
                     <div className="relative flex flex-col items-center justify-center w-full h-full p-8 space-y-8">
-                        <img className="w-full h-3/4 rounded-xl" src="https://cdn.discordapp.com/attachments/1218043126393077861/1318068991725408266/Thaddeus_Stevens_-_Brady-Handy-crop.png?ex=6761a3a8&is=67605228&hm=93f24fc33fadf38204d7022cd57184115387305f8cb18cfb1ab0d0bb5ba8f262&" />
+                        <img className="object-cover aspect-auto rounded-xl" src="/bbtnewspapergreen.png" />
                         <p className="flex justify-center text-4xl font-bold text-center font-info">BBT Shirt Newspaper Decal</p>
                         <Link to="/shop"  className="relative flex font-info items-center justify-center h-[80px] w-5/6 bg-accent text-[40px] font-bold transition-all duration-300 ease-in-out hover:bg-yellow-300/85 before:transition-transform before:duration-100 before:ease-out before:absolute before:inset-0 before:bg-transparent before:outline before:outline-8 before:outline-accent/50 hover:before:scale-x-110 hover:before:scale-y-125">
                             SHOP NOW
                         </Link>
                     </div>
-                    <div className="relative flex flex-col items-center justify-center w-full h-full p-8 space-y-8">
-                        <img className="w-full h-3/4 rounded-xl" src="https://cdn.discordapp.com/attachments/1218043126393077861/1318068991725408266/Thaddeus_Stevens_-_Brady-Handy-crop.png?ex=6761a3a8&is=67605228&hm=93f24fc33fadf38204d7022cd57184115387305f8cb18cfb1ab0d0bb5ba8f262&" />
-                        <p className="flex justify-center text-4xl font-bold font-info">Tacklepack</p>
-                        <Link to="/shop"  className="relative flex font-info items-center justify-center h-[80px] w-5/6 bg-accent text-[40px] font-bold transition-all duration-300 ease-in-out hover:bg-yellow-300/85 before:transition-transform before:duration-100 before:ease-out before:absolute before:inset-0 before:bg-transparent before:outline before:outline-8 before:outline-accent/50 hover:before:scale-x-110 hover:before:scale-y-125">
+                    <div className="relative flex flex-col items-center justify-center w-full h-full p-8 space-y-10">
+                        <img className="object-cover w-full h-3/4 rounded-xl" src="/bbttacklepacksketches.png" />
+                        <p className="relative flex justify-center text-4xl font-bold text-center font-info">
+                            Tacklepack
+                            <p className="absolute bottom-[-13px] left-1 text-sm font-black text-accent">Coming Soon!</p>
+                        </p>
+                        <Link to="/"  className="relative opacity-50 flex font-info items-center justify-center h-[80px] w-5/6 bg-accent text-[40px] font-bold transition-all duration-300 ease-in-out hover:bg-yellow-300/85 before:transition-transform before:duration-100 before:ease-out before:absolute before:inset-0 before:bg-transparent before:outline before:outline-8 before:outline-accent/50 hover:before:scale-x-110 hover:before:scale-y-125 disabled:opacity-50">
                             SHOP NOW
                         </Link>
                     </div>
@@ -117,7 +126,7 @@ const Landing = () => {
                                     </div>
                                 </div>
 
-                                <img className="absolute rounded-full right-9 top-9 size-36" src="https://i.pinimg.com/originals/6a/fc/5c/6afc5c43a5050054d7482202e3b75239.jpg" />
+                                <img className="absolute object-cover object-top rounded-full right-9 top-9 size-36" src={item.pic} />
 
                                 <p className="flex items-stretch mt-8 text-2xl text-white font-info">{item.testimonial}</p>
                             </div>
@@ -127,8 +136,8 @@ const Landing = () => {
             </div>
 
             <div className="relative flex items-center justify-center w-screen h-auto px-20 py-40 bg-primary/30">
-                <div className="relative grid w-2/3 grid-cols-3 gap-x-8">
-                    <img className="aspect-auto h-[350px] rounded-xl border-accent border-8 shadow-xl" src="https://cdn.pixabay.com/photo/2018/05/01/07/52/tuscany-3364921_640.jpg" />
+                <div className="relative grid w-5/6 grid-cols-3 gap-x-8">
+                    <img className="aspect-16/9 object-cover object-right h-[500px] rounded-xl border-accent border-8 shadow-xl" src="https://media.istockphoto.com/id/664304800/photo/fishing-concepts.jpg?s=612x612&w=0&k=20&c=PsxpGtuYvyhpi-g6wxjIS0NM2GC1mIjnXyVIo7QMiuM=" />
                 
                     <div className="flex flex-col items-center justify-center w-full space-y-10">
                         <p className="relative text-6xl font-black text-center font-title">Shop BBT Today</p>
@@ -138,7 +147,7 @@ const Landing = () => {
                         </Link>
                     </div>
 
-                    <img className="aspect-auto h-[350px] rounded-xl border-accent border-8 shadow-xl" src="https://cdn.pixabay.com/photo/2018/05/01/07/52/tuscany-3364921_640.jpg" />
+                    <img className="aspect-16/9 object-cover h-[500px] rounded-xl border-accent border-8 shadow-xl" src="https://t3.ftcdn.net/jpg/08/72/30/04/360_F_872300405_zpnAh0xmytmbZtvheyYReNnHTgLiqUxE.jpg" />
                 </div>
             </div>
         </>
