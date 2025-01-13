@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import Stripe from 'stripe';
 
-const stripe = new Stripe('sk_test_51QXucCB4LoFmb9NBx1u3TIwsiGOWgDBenKT4JPGlZeCJj4bLlxKndqUWVdNCPjc5x8216sXYdgmea9Z6ep5v8nQm009iRlHIXn', {
+const stripe = new Stripe(process.env.STRIPE_KEY || "no_key", {
   apiVersion: '2024-12-18.acacia', // Use the appropriate API version
 });
 
