@@ -20,7 +20,7 @@ const App = () => {
   return (
     <ShoppingCartProvider>
       <BrowserRouter>
-        <nav className="relative flex flex-row items-center w-screen h-[130px] border-b-2 border-b-gray-200 p-8">
+        <nav className="relative flex flex-row items-center w-screen h-[130px] border-b-2 border-b-gray-200 p-8 overflow-x-clip">
           <div className="relative flex flex-row items-center justify-start w-full space-x-4">
             <Link to="/about"  className="relative p-8 text-xl font-light text-center transition duration-200 ease-out bg-transparent font-info h-5/6 hover:bg-black/25">
               ABOUT US
